@@ -44,38 +44,25 @@
                 </div>
             </div>
             <div class="right1">
-                <h2>Description</h2>
-                <p>A solution centered on navigating smaller area outdoor spaces which includes a Directions widget, a Near Me widget, and a search bar. </p>
+                <h2>ESRI Experience Builder? Dashboard</h2>
+                <p>A solution centered on navigating between TCDSB schools and their associated floors, toggling on and off layers to obtain safety layers, etc. </p>
                 
-                <h2>Major Learning Outcomes</h2>
-                <p>Out of the <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/widgets-overview.htm" target="blank">many available widgets</a> , the Directions and Near Me widgets provided the best solution for navigating the Newmarket Parks data. The Directions tool allows the user to select a start and end point from anywhere on the map including an object from a feature layer, an intersection, or any coordinates. The tool then gives the user the option to choose from walking or driving time. The Near Me tool can be configured to allow the user to define a search area radius and it will return all features within that area. Both tools proved very useful for outdoor navigation. Finally, the Search widget was customized to only look for park names or feature categories (which included park woodlot, and open spaces). Being able to tailor the widgets to only allow the user to access the data in a way the author wants is certainly an advantage. </p>
-                <p>As a whole, there is a lot of trial and error required when building an Experience Builder app which can be frustrating. Even the associated Esri documentation did not always help provide a clear answer to some of the various settings/options of each widget. </p>
-                <h2>What didn't work?</h2>
-                <p>Before landing on the Directions and Near Me widget, the Coordinates and Coordinate Conversion widget were also tested. The idea was that by using these widgets, the user could click on any part of the map and get directions between two sets of chosen coordinates. Both tools had a somewhat clunky interface and would not be intuitive to a user who is unfamiliar with coordinate formatting. Additionally, since the Directions tool can choose any location on the map the Coordinates tool would be redundant for this project’s purposes. </p>
+                <h2>Highlights</h2>
+                <p>text</p>            
             </div>
         </div>
 
         <div class="hero2">
             <div class="left2">
-                <h2>Description</h2>
-                <p>A basic solution that creates 3D scenes, bringing your maps to life and helps visualize different scenarios. </p>
-                <h2>Major Learning Outcomes</h2>
-                    <p>ArcScene Viewer was proven to be useful by creating 3D versions of UDOT's 2D floorplans. We discovered this can be done by extruding your features - allowing to set your 2D line features as 3D wall features by assigning them a height attribute (based on the floor plans)
-                    </p>
+                <h2>Room Info Geodatabase</h2>
+                <p>A concise gdb which has all georeferenced .dwgs etc</p>
+                <h2>Highlights</h2>
+                   <p>text</p>
                     
-                    <p>ArcScene also allows the user to create snapshots of different angles and view specific layers with 3D surrounds. For 
-                        <a href="https://arcg.is/1LSWye" target="blank">Newmarket Parks</a>, by bringing it into a 3D scene, it really gives the viewer a sense of the topography and surrounding area. ArcScene also has neat features that can show the user what the 3D render would look like at certain times of day (sunlight/shadows) and in different weather conditions (snow/rain). 
-                    By creating snapshots, or slides, 2D viewing of the building layers can also be achieved for the floor plans. These slides are then also able to be brought in to other applications. 
-                    </p>
-                    
-                <h2>What didn't work?</h2>
-                    <p>A disadvantage found would be the lag and somewhat blurry, pixeled view of the 3D floorplans when trying to navigate and manipulate the feature too quickly. Slowly rotating and zooming in/out of the building worked, but quick movements seemed to slow down the viewers capabilities. If utilizing a large building/multiple buildings - this is good to keep in mind. We also continued to experience lag when bringing in the Scene into Experience Builder and Dashboards. 
-                    </p>
-                    <p>This product is more of a building block, but not a final solution. It has limited use, but is easily enhanced by brining it into other solutions. 
-                    </p>
+            
             </div>
             <div class="right2">
-                <h2><a href="https://arcg.is/1arOCP1" target="_blank">ArcGIS Scene Viewer: 3D</a></h2>
+                <h2><a href="https://arcg.is/1arOCP1" target="_blank">3D Render Map</a></h2>
                 <div class="View">
                     <img class="solim" src="../media/ArcSceneUDOT.png" alt="ArcScene UDOT 3D Building"> 
                 </div>
@@ -92,23 +79,19 @@
                 </div>
             </div>
             <div class="right1">
-                <h2>Description</h2>
-                <p>A solution designed to allow users to view the UDOT building in 3D, find room locations utilizing a search bar, with the option to find room-level information. </p>
-                <h2>Major Learning Outcomes</h2>
-                <p>Experience Builder provides a plethora of ‘widgets’ - which you drag and drop into the desired layout,  creating a custom dashboard. The widget which would be most useful for indoor navigation and room-level information would be the <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/near-me-widget.htm" target="blank">Near Me</a> or <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/directions-widget.htm" target="blank">Directions</a> widget. However, a crucial requirement for these features to work is the necessity for indoor spaces to be "floor aware." Unfortunately, the UDOT floor plans did not have this function - that the mapping system must recognize and differentiate between various floors within a building. The <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/swipe-widget.htm" target="blank">Swipe</a> widget allows users to flip between floors to see changes within the layouts, while the <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/search-widget.htm" target="blank">Search</a> function allows users to input what they are looking for and outputs are listed for them (this can be any attribute provided in the data - we utilized room name and floor number).</p>
-                <h2>What didn't work?</h2>
-                <p>When using some widgets, you are unable to stack more than one onto the same map (such as Swipe and Search). This can be a bit of a constraint - as having to put multiple of the same map to maximize widgets used takes up space within the dashboard, as well as looking repetitive. There is no setting that allows for the Search widget's highlight colour to be changed. The default is a pale blue. In turn, when searching for a room - the pale outline highlighting the room is somewhat hard to find. Using a large dataset tends to cause lag within Experience Builder, creating an underwhelming experience for the user. UDOT floorplans not being “floor aware” also limited our ability to utilize the navigational and routing widgets.</p>
+                <h2>3D Render Map</h2>
+                <p>A solution designed to display the capabilities of TCDSB data through a 3D lens </p>
+                <h2>Highlights</h2>
+                <p>text</p>               
             </div>
         </div>
 
         <div class="hero2">
             <div class="left2">
-                <h2>Description</h2>
-                <p>An open source approach to indoor navigation.</p>
-                <h2>Major Learning Outcomes</h2>
-                <p>Exploring this part of the solution was a very good lesson learned. Basically, The application of <a href="https://www.qgis.org/en/site/" target="_blank">QGIS</a> was to create floorplans, add/edit floor level information in attribute table, create navigation layers and export the features into json files. <a href="https://leafletjs.com/" target="_blank">Leaflet</a>, an open source JavaScript library for interactive mapping solution employs the json items from QGIS to develop a web based solution for indoor navigation. The overall QGIS proceess includes creating features and <a href="https://github.com/wrld3d/wrld-indoor-maps-api" target="blank">Indoor Mapping Tool</a>, a web map based solution. </p>
-                <h2>What didn't work?</h2>
-                <p>UDOT floorplans being a propitary data in ArcGIS Server, we were unable to make further edits on the floor plan. For generating a 3D perspective, it is mandatory in QGIS to have advance editing tool active. However, this functionality didn't work out for we didn't have editing rights to UDOT floorplan. Having only limited functionality on the floorplan and not being able to access <a href="https://github.com/wrld3d/wrld-indoor-maps-api" target="blank">Indoor Mapping Tool</a>, this solution quite didn't work out for us.  </p>
+                <h2>Automation Scripts / User Manual</h2>
+                <p>An detailed documentation guide for TCDSB staff to seamlessly continue their indoor mapping initiatives.</p>
+                <h2>Highlights</h2>
+                <p>text</p>                
             </div>
             <div class="right2">
                 <h2><a href="https://github.com/wrld3d/wrld-indoor-maps-api" target="blank">Open Source Solution using QGIS </a></h2>
@@ -125,7 +108,7 @@
             <hr>
             <div class="row">
                 <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
-                    <a href="#">Web 4</a>.
+                    <a href="#">Project 2414</a>.
                 </p>
             </div>
         </footer>
