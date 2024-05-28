@@ -8,32 +8,64 @@
         <!-- Fontawesome link: Font Awesome Intro https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="icon" href="../media/favicon-32x32.png" type="image/png">
-        
     </head>
-    <body>
-       <!-- Header and navbar for each page-->
-      <!-- Header image and text -->
-      <div class="header">
+   <style>
+        /* Inline CSS for the navbar */
+        #navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        #navbar nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+        }
+        .nav-menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .nav-menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .nav-menu a#current {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .hamburger {
+            display: none; /* Hide hamburger for now */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and navbar for each page-->
+    <!-- Header image and text -->
+    <div class="header">
         <div class="headertext">
-          <h1>Our Final Solutions</h1>
+            <h1>Our Final Solutions</h1>
         </div>  
-      </div>
+    </div>
 
-      <!-- Navigation bar text, https://www.youtube.com/watch?v=e5wjLZzMmYM for html -->
-      <div id="navbar">
+    <!-- Navigation bar -->
+    <div id="navbar">
         <nav>
-          <ul class="nav-menu">
-            <li><a href="../index.html">Home</a></li>
-              <li><a href="./methodology.html">Methodology</a></li>
-              <li><a id=current href="./solution.html">Final Solutions</a></li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+            <div class="nav-menu" style="display: flex;">
+                <a href="../index.html">Home</a>
+                <a href="./methodology.html">Methodology</a>
+                <a id="current" href="./solution.html">Final Solutions</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-      </div>
+    </div>
       <!-- End of header and navbar-->
         
       <div class="hero1">
