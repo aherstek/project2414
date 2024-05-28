@@ -4,7 +4,7 @@
   font-family: Raleway, sans-serif;
 }
 body{
-  background-color: #E8EBED;
+  background-color: #F6F6E9;
   margin: 20px;
 }
 
@@ -33,7 +33,7 @@ body{
     padding: 20px;
 
     /* colour formatting */
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(246, 246, 233, 0.6);
     color: black;
     max-width: 90%;
     width: 60%;
@@ -53,7 +53,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: darkslategrey;
+  background-color: #7D9B76;
   position: sticky;
   top: 251px;
   padding: 15px 25px;
@@ -70,7 +70,7 @@ nav{
 
 ul .nav-menu{
  width: 90%;
- background-color: grey;
+ background-color: #1F5014;
  margin: auto;
 }
 
@@ -102,17 +102,17 @@ nav a{
 }
 
 #current {
- background-color: #babec2;
+ background-color: #C4D7B2;
  padding: 10px 10px;
 }
 
 nav a:hover{
- background-color: #e8ebed;
- color: darkslategray;
+ background-color: #F6F6E9;
+ color: #1F5014;
  padding: 10px 10px;
 }
 nav a:active{
- background-color: grey;
+ background-color: #7D9B76;
  color: white;
  padding: 10px 10px;
 }
@@ -128,7 +128,7 @@ nav a:active{
  height: 4px;
  margin: 5px;
  transition: all 0.3s ease;
- background-color: #fff;
+ background-color: #F6F6E9;
 }
 
 /* making the hamburger show up at 1300px */
@@ -155,10 +155,10 @@ nav a:active{
    top: 70px;
    gap: 0;
    flex-direction:column;
-   background-color: slategray;
+   background-color: #1F5014;
    width: 100%;
    text-align: center;
-   transition: 0.3s
+   transition: 0.3s;
  }
  .nav-item{
    margin: 16px 0;
@@ -243,7 +243,7 @@ p{
 
 .hero .right{
   text-align: justify;
-  background-color: #c9cdd2;
+  background-color: #C4D7B2;
   margin: 0px;
   padding: 30px;
   border: 1px black;
@@ -264,7 +264,7 @@ p{
 }
 .hero1 .right1{
   text-align: justify;
-  background-color: #c9cdd2;
+  background-color: #C4D7B2;
   margin: 0px;
   padding: 30px;
   border: 1px black;
@@ -280,7 +280,7 @@ p{
 }
 .hero2 .left2{
   text-align: justify;
-  background-color: #c9cdd2;
+  background-color: #C4D7B2;
   margin: 0px;
   padding: 30px;
   border: 1px black;
