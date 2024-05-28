@@ -82,6 +82,8 @@ ul .nav-menu{
 
 li{
  list-style: none;
+ display: inline-block;
+ justify-content: space-between;
 }
 
 li a{
