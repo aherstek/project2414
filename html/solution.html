@@ -35,78 +35,91 @@
         </nav>
       </div>
       <!-- End of header and navbar-->
-      <div class="solcont"> <!--solution description-->
-            <h2>Project 2414 Deliverables</h2>
-            <p>ESRI Experience Builder Dashboard: explaination</p>
-            
-            <p>ArcGIS Pro? Geodatabase: explaination</p>
-
-          <p>Map of X School: explaination</p>
-
-          <p>Automation Guide/User Manual: explaination</p>
-      </div>
-
-        <div class="solcont"> <!--solution link/iframe-->
-            <div class="solution">              
-                <iframe class="solif" src="https://fleming.maps.arcgis.com/apps/instant/3dviewer/index.html?appid=59d282ebf6a548abbab260a57b491549"></iframe>
+        
+      <div class="hero1">
+            <div class="left1">
+                <h2><a href="https://experience.arcgis.com/experience/d7d3bc242a0f4985adb165a76e3560ce" target="_blank">ArcGIS Experience Builder - Outdoor Routing</a></h2>
+                <div class="View">
+                    <img src="../media/chloe_EBrouting.gif" alt="Outdoor Routing EB GIF" width="800"> 
+                </div>
+            </div>
+            <div class="right1">
+                <h2>Description</h2>
+                <p>A solution centered on navigating smaller area outdoor spaces which includes a Directions widget, a Near Me widget, and a search bar. </p>
+                
+                <h2>Major Learning Outcomes</h2>
+                <p>Out of the <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/widgets-overview.htm" target="blank">many available widgets</a> , the Directions and Near Me widgets provided the best solution for navigating the Newmarket Parks data. The Directions tool allows the user to select a start and end point from anywhere on the map including an object from a feature layer, an intersection, or any coordinates. The tool then gives the user the option to choose from walking or driving time. The Near Me tool can be configured to allow the user to define a search area radius and it will return all features within that area. Both tools proved very useful for outdoor navigation. Finally, the Search widget was customized to only look for park names or feature categories (which included park woodlot, and open spaces). Being able to tailor the widgets to only allow the user to access the data in a way the author wants is certainly an advantage. </p>
+                <p>As a whole, there is a lot of trial and error required when building an Experience Builder app which can be frustrating. Even the associated Esri documentation did not always help provide a clear answer to some of the various settings/options of each widget. </p>
+                <h2>What didn't work?</h2>
+                <p>Before landing on the Directions and Near Me widget, the Coordinates and Coordinate Conversion widget were also tested. The idea was that by using these widgets, the user could click on any part of the map and get directions between two sets of chosen coordinates. Both tools had a somewhat clunky interface and would not be intuitive to a user who is unfamiliar with coordinate formatting. Additionally, since the Directions tool can choose any location on the map the Coordinates tool would be redundant for this project’s purposes. </p>
             </div>
         </div>
 
-        <div class="solcont"> <!--solution description-->
-            <h2>The Setup: ArcScene Viewer</h2>
-            <p>The first step was bringing the data in ArcScene, which was simple as starting a Scene, browsing for and selecting the UDOT Floor Plans feature layer package. 
-                This brought in 10 layers: 5 detailed line drawings and 5 polygon layers with feature information. </p>
-            <p>For each of the polygon layers the main attribute chosen to visualize was the Floor (number) adn the 
-                3D drawing style was chosen. Going into the 3D options the attribute values could be set. Each layer got a different color at 50% transparency and the height was set to 3m. For each layer, the elevation was set to be relative to the ground. 
-                Depending on what floor it was, it varied in 3m increments. The basement was -3m (because it is underground), the 1st floor as 0m, the 2nd floor as 3m, 3rd as 6m and 4th as 9m. There is additional option for labels, but 
-                decided that was too cluttered. </p>
-
-            <p>For the line layers, no attribute was visualized and the 3D path drawing style was selected. The drawing profile was a wall style and the color was set similar to the polygon pair, but at 100% opacity. 
-                These layers were also set to a fixed height of 3m and set the elevation relative to the ground like their polygon counterparts. </p>
-            <p>In the Scene Viewer the basemap can be set and for this scene a topographic map with 50% transparency (to be able to see the basement layer) was set. There is option to do 3D basemaps, but it was not necessary and made the scene more busy.</p>
-            <p>The final thing that was done was in the Slide Manager and different snapshots of the scene were taken. Each layer got a '2D' snapshot, with the other layers toggled off. Then the view from each N/E/S/W was taken for general observation. </p>
-            
-            <h2>ArcGIS Instant Apps</h2>
-            <p>Right in the ArcScene, underneath the Save button, there is a button that shows a few different apps you can bring the Scene into. Clicking on the Instant Apps, it brings you straight to the Create page. It starts you off with some 
-                template suggestions and asks questions, like 'What is your goal for the app', to help you filter through the different templates. This narrowed down the options and the 3D Viewer template was chosen and created. The Express version is 
-                the one that is first seen that gives the most essential configuration settings. Toggling it off, all the options for each section can be set. </p>
-            <p>The first section is Scene: Select a scene to display, view the information and set a map area that people can use.</p>
-            <p>The next section is About: Here you configure tools that provide the user information while using it (like an introduction window or header) and allow more map accessibility.</p>
-
-            <p>The third section is Interacivity: Configure different map tools (such as displaying the preset slides made in ArcScene! or adding Navigation controls), modications to the map can also be made (such as attribute filters, daylight settings, layer lists, etc.) 
-                This section generally covers all the different map widgets/tools that you would want displayed in the app. </p>
-            <p>The final section is Theme & Layout: Change the theme to dark/light and whatever color scheme makes you happy. Here you can set where you want each of the enabled map tools to be displayed. </p>
-            <p>Once everything is configured to your liking, hit Publish, change the sharing access and launch! </p>
-            
+        <div class="hero2">
+            <div class="left2">
+                <h2>Description</h2>
+                <p>A basic solution that creates 3D scenes, bringing your maps to life and helps visualize different scenarios. </p>
+                <h2>Major Learning Outcomes</h2>
+                    <p>ArcScene Viewer was proven to be useful by creating 3D versions of UDOT's 2D floorplans. We discovered this can be done by extruding your features - allowing to set your 2D line features as 3D wall features by assigning them a height attribute (based on the floor plans)
+                    </p>
+                    
+                    <p>ArcScene also allows the user to create snapshots of different angles and view specific layers with 3D surrounds. For 
+                        <a href="https://arcg.is/1LSWye" target="blank">Newmarket Parks</a>, by bringing it into a 3D scene, it really gives the viewer a sense of the topography and surrounding area. ArcScene also has neat features that can show the user what the 3D render would look like at certain times of day (sunlight/shadows) and in different weather conditions (snow/rain). 
+                    By creating snapshots, or slides, 2D viewing of the building layers can also be achieved for the floor plans. These slides are then also able to be brought in to other applications. 
+                    </p>
+                    
+                <h2>What didn't work?</h2>
+                    <p>A disadvantage found would be the lag and somewhat blurry, pixeled view of the 3D floorplans when trying to navigate and manipulate the feature too quickly. Slowly rotating and zooming in/out of the building worked, but quick movements seemed to slow down the viewers capabilities. If utilizing a large building/multiple buildings - this is good to keep in mind. We also continued to experience lag when bringing in the Scene into Experience Builder and Dashboards. 
+                    </p>
+                    <p>This product is more of a building block, but not a final solution. It has limited use, but is easily enhanced by brining it into other solutions. 
+                    </p>
+            </div>
+            <div class="right2">
+                <h2><a href="https://arcg.is/1arOCP1" target="_blank">ArcGIS Scene Viewer: 3D</a></h2>
+                <div class="View">
+                    <img class="solim" src="../media/ArcSceneUDOT.png" alt="ArcScene UDOT 3D Building"> 
+                </div>
+            </div>
         </div>
 
-
-        <div class="solcont">
-            <img class="solgif" src="../media/InstAppFx.gif" alt="Instant App Functionality GIF"> 
+        <div class="hero1">
+            <div class="left1">
+                <h2><a href="https://experience.arcgis.com/experience/6754864b8e574b06bf0059e01546eac1/" target="_blank">ArcGIS Experience Builder - Indoor Room Info</a></h2>
+                <div class="View">
+                    <img src="../media/3DExperBuild.gif" alt="Experience Builder Functionality GIF"> 
+                    <br>
+                    <img src="../media/elevator.gif" alt="Experience Builder Functionality GIF"> 
+                </div>
+            </div>
+            <div class="right1">
+                <h2>Description</h2>
+                <p>A solution designed to allow users to view the UDOT building in 3D, find room locations utilizing a search bar, with the option to find room-level information. </p>
+                <h2>Major Learning Outcomes</h2>
+                <p>Experience Builder provides a plethora of ‘widgets’ - which you drag and drop into the desired layout,  creating a custom dashboard. The widget which would be most useful for indoor navigation and room-level information would be the <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/near-me-widget.htm" target="blank">Near Me</a> or <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/directions-widget.htm" target="blank">Directions</a> widget. However, a crucial requirement for these features to work is the necessity for indoor spaces to be "floor aware." Unfortunately, the UDOT floor plans did not have this function - that the mapping system must recognize and differentiate between various floors within a building. The <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/swipe-widget.htm" target="blank">Swipe</a> widget allows users to flip between floors to see changes within the layouts, while the <a href="https://doc.arcgis.com/en/experience-builder/latest/configure-widgets/search-widget.htm" target="blank">Search</a> function allows users to input what they are looking for and outputs are listed for them (this can be any attribute provided in the data - we utilized room name and floor number).</p>
+                <h2>What didn't work?</h2>
+                <p>When using some widgets, you are unable to stack more than one onto the same map (such as Swipe and Search). This can be a bit of a constraint - as having to put multiple of the same map to maximize widgets used takes up space within the dashboard, as well as looking repetitive. There is no setting that allows for the Search widget's highlight colour to be changed. The default is a pale blue. In turn, when searching for a room - the pale outline highlighting the room is somewhat hard to find. Using a large dataset tends to cause lag within Experience Builder, creating an underwhelming experience for the user. UDOT floorplans not being “floor aware” also limited our ability to utilize the navigational and routing widgets.</p>
+            </div>
         </div>
 
-        <div class="solcont"> <!--DEBRIEFING-->
-            <h2>Major Learning Outcomes</h2>
-            <p>Choosing the right template and going beyond the Express setup functionality allows for a more comprehensive app to be set up. 
-                While ArcScene worked well, this brings in more widgets for the client/audience to work with. While not available for the UDOT data (because it isn't floor aware), 
-                there is the extended ability to add in Building Explorer and Floor Filter interactivity, which would be a great tool for our project. Instant App is a great to
-                get familiar with the data and to get a better understanding of it in a quick, simple & interactive manner. 
-            </p>
-            <h2>What didn't work?</h2>
-            <p>Due to not being able to work with floor aware plans, the Filtering interaction may be more inefficient. Filters need to be set up for each floor for the user. For larger buildings
-                this can be a daunting task without automation. The particular layout, while did hit a majority of our desired solution points, wasn't able to deliver routing like Experience Builder or Dashboards
-                could. This solution may not be aimed at our audience, however, this would be a great tool for showrooms or public viewing of the clients proposal/work. The client would generally
-                like/need slightly more in-depth functions for working and viewing the data. 
-            </p>
-            <h2>Next Steps</h2>
-            <p>- Being able to bring in 2 different views into an application defenitely seems doable - to be able to show both 2D and 3D side by side. </p>
-            <p>- Routing is always important, such as being able to route to emergency exits or an evacuation location. While Instant App doesn't show routing, diving deeper into 
-                using rest services to bring in routing in may be an option. 
-            </p>
-        </div>
+        <div class="hero2">
+            <div class="left2">
+                <h2>Description</h2>
+                <p>An open source approach to indoor navigation.</p>
+                <h2>Major Learning Outcomes</h2>
+                <p>Exploring this part of the solution was a very good lesson learned. Basically, The application of <a href="https://www.qgis.org/en/site/" target="_blank">QGIS</a> was to create floorplans, add/edit floor level information in attribute table, create navigation layers and export the features into json files. <a href="https://leafletjs.com/" target="_blank">Leaflet</a>, an open source JavaScript library for interactive mapping solution employs the json items from QGIS to develop a web based solution for indoor navigation. The overall QGIS proceess includes creating features and <a href="https://github.com/wrld3d/wrld-indoor-maps-api" target="blank">Indoor Mapping Tool</a>, a web map based solution. </p>
+                <h2>What didn't work?</h2>
+                <p>UDOT floorplans being a propitary data in ArcGIS Server, we were unable to make further edits on the floor plan. For generating a 3D perspective, it is mandatory in QGIS to have advance editing tool active. However, this functionality didn't work out for we didn't have editing rights to UDOT floorplan. Having only limited functionality on the floorplan and not being able to access <a href="https://github.com/wrld3d/wrld-indoor-maps-api" target="blank">Indoor Mapping Tool</a>, this solution quite didn't work out for us.  </p>
+            </div>
+            <div class="right2">
+                <h2><a href="https://github.com/wrld3d/wrld-indoor-maps-api" target="blank">Open Source Solution using QGIS </a></h2>
+                <div class="View">
+                    <img src="../media/qgis-leaflet.jpg" alt="QGIS Leaflet Trial Image"> 
+                </div>
+            </div>
+        </div>        
 
         <script src="script.js"></script>
-
+  
         <!-- Site footer -->
         <footer class="site-footer">
             <hr>
