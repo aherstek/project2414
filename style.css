@@ -15,7 +15,7 @@ body{
   width: 100%;
   height: 260px;
   text-align: center;
-  background-image: url('media/header2.png'); 
+  background-image: url('media/SHeader.png'); 
   background-size: cover; 
   background-position: center;
 }
@@ -738,7 +738,7 @@ body {
   line-height:24px;
   color:#FFFFFF;
   text-align: center;
-  background-image: url('media/footer3.png');
+  background-image: url('media/SFooter.png');
   background-size: cover;
   background-position: center;
 }
