@@ -4,9 +4,12 @@
   font-family: Raleway, sans-serif;
 }
 body{
-  background-color: #F6F6E9;
+  background-color: #ffffff;
+    /* background-color: #f6f6e9; */
   margin: 20px;
 }
+
+
 
 /* HEADER AND NAV BAR */
 /* Background image header */
@@ -240,6 +243,7 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   color:#454c53;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 .hero{
   margin: 10px;
   display: grid;
@@ -255,6 +259,7 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   height: 600px;
   padding: 10px;
 }
+
 .left p{
   text-align: justify;
   margin-left: 15px;
@@ -274,15 +279,20 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
 
 /* Methodology Section CSS */
 .hero1{
-  margin: 10px;
+  margin: 0px;
   display: grid;
   grid-template-columns: 60% 40%;
   margin-bottom: 40px;
+  background-color: #f6f6e9 /*light grey green*/;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
+
 .left1 .View, .left1 h2 {
   margin-left: 50px;
   text-decoration: none;
 }
+
 .hero1 .right1{
   text-align: justify;
   background-color: #C4D7B2;
@@ -293,30 +303,61 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   font-family: Raleway, sans-serif;
 }
 
-.hero2{
-  margin: 10px;
+.hero2 {
+  margin: 0px;
   display: grid;
   grid-template-columns: 40% 60%;
   margin-bottom: 40px;
+  background-color: #f6f6e9  /*light yellow/green */;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
+
 .hero2 .left2{
   text-align: justify;
   background-color: #C4D7B2;
   margin: 0px;
   padding: 30px;
-  border: 1px black;
   border-radius: 10px;
   font-family: Raleway, sans-serif;
 }
 
 .right2 .View, .right2 h2 {
- margin-left: 50px;
+ /* margin-left: 50px; */
  text-decoration: none;
+ margin-left:auto;
+ margin-right: auto;
+ /* border: 2px solid black; */
+ width: 100%;
+ padding: 5px;
 }
+
 .right2 .View img{
-  height: 500px;
-  width: 800px;
+  /* height: 500px;
+  width: 800px; */
+  width: 100%;
   object-fit: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero2, .hero1 {
+    grid-template-columns: 100%; /* Change to single column layout */
+    padding: 10px;
+  }
+  .left1 .View, .right2 .View {
+    margin-left:auto;
+    margin-right: auto;
+    /* border: 2px solid black; */
+    width: 100%;
+    border-radius: 10px;
+ 
+  }
+
+  .left1 .View img, .right2 .View img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 /* shadowing for UDOT image / text */
