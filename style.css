@@ -80,6 +80,7 @@ ul .nav-menu{
  }
 }
 
+
 li{
  list-style: none;
  display: inline-block;
@@ -92,6 +93,23 @@ li a{
  display:flex;
 }
 
+.left2 ol li, .right1 ol li{
+  display: list-item;
+  list-style-type: decimal;
+  padding-left: 5px;
+  list-style-position: outside;
+  padding: 2px;
+}
+
+.left2 ul li, .right1 ul li {
+  display: list-item;
+  list-style-type: disc;
+  padding-left: 5px;
+  list-style-position: outside;
+  padding: 2px;
+  margin-left: 40px;
+
+}
 /* Navigation bar page choices */
 nav a{
  color: white;
