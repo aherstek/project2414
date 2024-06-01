@@ -96,7 +96,7 @@ li a{
 .left2 ol li, .right1 ol li{
   display: list-item;
   list-style-type: decimal;
-  padding-left: 5px;
+  margin-left: 20px;
   list-style-position: outside;
   padding: 2px;
 }
@@ -107,13 +107,14 @@ li a{
   padding-left: 5px;
   list-style-position: outside;
   padding: 2px;
-  margin-left: 40px;
+  margin-left: 50px;
 
 }
+
 /* Navigation bar page choices */
 nav a{
  color: white;
- font-size: 20px;
+ font-size: 25px;
  letter-spacing: 1px;
  text-decoration: none;
  outline: none;
@@ -207,13 +208,14 @@ a:hover {
 }
 
 h2{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 15px;
 }
 
-p{
+p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   margin-top: 15px;
+  font-size: 18px;
 }
 
 
@@ -373,8 +375,8 @@ p{
 
 
 
-/*-------*/
-.solution, iframe.solif{
+/* -------*/
+/* .solution, iframe.solif{
   width: 100%;
   min-height: 600px;
   max-height: 1500px;
@@ -392,20 +394,20 @@ img.solgif {
   margin: auto;
   display: block;
   width: -webkit-fill-available;
-}
+} */
 
-.solcont {
-  padding: 10px; /*gives inside padding*/
+/* .solcont {
+  padding: 10px; /*gives inside padding
   position: relative;
   background-color: white;
   border: solid 2px darkslategrey;
   max-width: 80%;
   align-content: center;
-  margin: auto; /*spaces side margins out*/
-  margin-bottom: 10px; /*gives spaceing after each section*/
+  margin: auto; /*spaces side margins out
+  margin-bottom: 10px; /*gives spaceing after each section
   height: auto;
 }
-/* ---- */
+ */
 
 .responsive-cell-block {
   min-height: 75px;
