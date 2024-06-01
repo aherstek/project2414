@@ -293,6 +293,22 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   text-decoration: none;
 }
 
+.left1 .View {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.left1 .View img {
+  width: 100%;
+  margin: 5px;
+}
+
+
 .hero1 .right1{
   text-align: justify;
   background-color: #C4D7B2;
@@ -323,41 +339,67 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
 }
 
 .right2 .View, .right2 h2 {
- /* margin-left: 50px; */
+ margin-left: 50px;
  text-decoration: none;
- margin-left:auto;
- margin-right: auto;
- /* border: 2px solid black; */
- width: 100%;
- padding: 5px;
 }
 
-.right2 .View img{
+/* .right2 .View img{ */
   /* height: 500px;
   width: 800px; */
-  width: 100%;
+  /* width: 100%;
   object-fit: contain;
+} */
+
+.right2 .View {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.right2 .View img {
+  margin: 5px;
+  width: 100%;
 }
 
 
-@media screen and (max-width: 768px) {
+/* TABLET */
+@media screen and (max-width: 1050px) {
+h2{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
+  margin-top: 10px;
+  font-size: 16px;
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 850px) {
   .hero2, .hero1 {
     grid-template-columns: 100%; /* Change to single column layout */
     padding: 10px;
   }
+
   .left1 .View, .right2 .View {
     margin-left:auto;
     margin-right: auto;
-    /* border: 2px solid black; */
     width: 100%;
     border-radius: 10px;
- 
   }
 
   .left1 .View img, .right2 .View img {
     width: 100%;
     border-radius: 10px;
   }
+
+
 }
 
 /* shadowing for UDOT image / text */
