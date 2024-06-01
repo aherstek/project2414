@@ -378,6 +378,9 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   width: 90%;
 }
 
+.left1 h2, .right2 h2 {
+  text-align: center;
+}
 
 /* TABLET */
 @media screen and (max-width: 1050px) {
