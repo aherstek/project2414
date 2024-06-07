@@ -155,7 +155,7 @@ nav a:active{
 }
 
 /* making the hamburger show up at 1300px */
-@media(max-width: 1150px){
+@media(max-width: 1300px){
  .hamburger{
    display:block;
  }
@@ -392,13 +392,26 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   padding: 10px;
 }
 
+/* For linked images*/
+.left1 .View a img, .right2 .View a img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+
 embed {
   width: 1500px;
   height: 700px;
 }
 
+
 /* TABLET */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
 h2{
   font-size: 20px;
   font-weight: bold;
@@ -430,6 +443,9 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
     border-radius: 10px;
   }
 
+  embed {
+    height: 500px;
+  }
 
 }
 
