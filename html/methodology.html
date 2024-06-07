@@ -142,15 +142,56 @@
             </div>
             <div class="right1">
                 <h2>Cartographic Output</h2>
-                <p>2D floor plan layout</p>
-                <p>3D scene</p>
+                <ol>
+                <li>The following colour scheme was created for the point/polyline data within the layers:</li>
+                    <ul>
+                        <li>ROOMTAG: HEX code #000000</li>
+                        <li>Polyline: HEX code #A55252</li>
+                        <li>Fire Safety Layers: HEX code #FF0000</li>
+                        <li>Police Safety Layers: HEX code #215C98</li>
+                        <li>Security Camera Layers: HEX code #00FF00</li>
+                    </ul>
+                <li>2D output: Static maps were created of each floor from a sample school, highlighting it's safety features and locations
+                <li>3D output: Two sample schools were imported into ArcGIS Pro, using ArcScene to create 3D renders</li>
+                    <ul>
+                        <li>Georeferenced within ArcGIS Pro</li>
+                        <li>Feature to Polygon tool used to create polygons, Adjust 3DZ to set floor height</li>
+                        <li>Creating FloorNumber and FloorHeight fields, then using the Calculate tool to populate the fields accordingly</li>
+                        <li>Once in SceneViewer, clicking the feature layer and set the Type to MaxHeight and the Field to FloorHeight</li>
+                        <li>Once rendered, adjusted labelling/symbology as needed</li>
+                        
+                    </ul>
+                </ol>
             </div>
         </div>
 
         <div class="hero2">
             <div class="left2">
                 <h2>Dashboard</h2>
-                <p>All Web layers have been put into AGOL group</p>
+                 <ol>
+                    <li>All ArcGIS Online web maps were edited to ensure:</li>
+                      <ul>
+                        <li>Symbology was correct (following pre-determined hex codes)</li>
+                        <li>Room number labels were visible from a building level</li>
+                        <li>All layers grouped by floor, with it defaulting to only Floor 1 visible</li>
+                        <li>Any stray points that did not georeference were removed</li>
+                    </ul>
+                    <li>Finalized web maps were placed in a AGOL group, and was uploaded to ArcGIS Instant Apps using the 'Atlas' template </li>
+                    <li>The dashboard was then configured:</li>
+                    <ul>
+                        <li>Introduction screen to welcome user to the app</li>
+                        <li>Splash screen of instructions to allow user to understand how the app works and useful tools</li>
+                        <li>Widgets such as compass, zoom in/out and search on every webmap</li>
+                        <li>Widgets that allow for floor plans to be toggled on and off, and transparency adjusted</li>
+                        <li>Ensuring TCDSB logo and colour scheme followed throughout the app</li>
+                    </ul>
+                     <li>Once configuration was complete, the Instant App was published</li>
+                </ol>
+            </div>
+            
+            
+            
+            
             </div>
             <div class="right2">
                 <h2>ArcGIS Online: Atlas Instant App</h2>
