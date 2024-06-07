@@ -382,6 +382,21 @@ p, .left2 ol li, .right1 ol li, .left2 ul li, .right1 ul li {
   text-align: center;
 }
 
+
+.left1 .pdf {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+embed {
+  width: 1500px;
+  height: 700px;
+}
+
 /* TABLET */
 @media screen and (max-width: 1050px) {
 h2{
